@@ -1,14 +1,26 @@
 import "./app.scss";
-import Navbar from "./components/navbar/Navbar";
+import Hero from "../src/components/hero/Hero";
+import Navbar from "../src/components/navbar/Navbar";
+
+import Parallex from "../src/components/parallex/Parallex";
+import Services from "./components/services/Services";
 const App = () => {
   return (
     <div>
       <section id="Homepage">
         <Navbar />
+        <Hero />
       </section>
-      <section id="Services">parallex</section>
-      <section>service</section>
-      <section id="Portfolio">parallex</section>
+      <section id="Services">
+        <Parallex type="services" />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section id="Portfolio">
+        {" "}
+        <Parallex type="Portfolio" />
+      </section>
       <section>portfolio1</section>
       <section>portfolio2</section>
       <section>portfolio3</section>
