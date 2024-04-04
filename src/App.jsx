@@ -4,9 +4,13 @@ import Navbar from "../src/components/navbar/Navbar";
 
 import Parallex from "../src/components/parallex/Parallex";
 import Services from "./components/services/Services";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
+import Cursor from "./components/cursor/Cursor";
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -18,13 +22,12 @@ const App = () => {
         <Services />
       </section>
       <section id="Portfolio">
-        {" "}
         <Parallex type="Portfolio" />
       </section>
-      <section>portfolio1</section>
-      <section>portfolio2</section>
-      <section>portfolio3</section>
-      <section id="Contact">contact</section>
+      <Portfolio />
+      <section id="Contact">
+        <Contact />
+      </section>
     </div>
   );
 };
