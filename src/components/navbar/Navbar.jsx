@@ -15,17 +15,17 @@ function Navbar() {
           safu mern
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/safumulatu1/" target="blank">
+            <img src="/linkedln.png" alt="" />
+          </a>
+          <a href="https://github.com/safumulatu" target="blank">
+            <img src="/github.png" alt="" />
+          </a>
+          <a href="https://twitter.com/SafuM2721 " target="blank">
+            <img src="/twitter.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com/safuu.maalanjiraa" target="blank">
             <img src="/facebook.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
           </a>
         </div>
       </div>

@@ -72,7 +72,7 @@ function Hero() {
         safu mern safu fulstack
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/no-more.png" alt="" />
       </div>
     </div>
   );

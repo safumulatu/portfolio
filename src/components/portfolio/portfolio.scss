@@ -56,11 +56,14 @@
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
 
           @include mobile {
             object-fit: contain;
           }
+        }
+        img:hover {
+          width: max-content;
         }
       }
 
@@ -93,14 +96,25 @@
             font-size: 16px;
           }
         }
-
+        source-and-demo {
+          float: right;
+          margin: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-between;
+          background-color: grey;
+        }
         button {
           background-color: orange;
           border: none;
-          border-radius: 10px;
+          border-radius: 15px;
           padding: 10px;
           width: 200px;
           cursor: pointer;
+        }
+        button:hover {
+          background-color: rgb(81, 54, 2);
         }
       }
     }

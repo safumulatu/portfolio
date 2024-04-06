@@ -111,8 +111,10 @@ const Contact = () => {
           <textarea rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
           {error &&
-            "oops your message won't reach with safu please use his social media!"}
-          {success && "your message sent successfully!"}
+            alert(
+              "oops your message won't reach with safu please use his social media!"
+            )}
+          {success && alert("your message sent successfully!")}
         </motion.form>
       </div>
     </motion.div>
