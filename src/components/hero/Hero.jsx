@@ -1,3 +1,4 @@
+import Portfolio from "../portfolio/Portfolio";
 import "./hero.scss";
 import { motion } from "framer-motion";
 const textVariants = {
@@ -50,9 +51,11 @@ function Hero() {
             Web developer and UI designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
+            <a href={<Portfolio />}>
+              <motion.button variants={textVariants}>
+                See the Latest Works
+              </motion.button>
+            </a>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img

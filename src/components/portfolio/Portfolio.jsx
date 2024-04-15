@@ -6,6 +6,7 @@ import amazon from "../../../public/safu-amazon.png";
 import netflix from "../../../public/safu-netflix.png";
 import apple from "../../../public/apple.png";
 import evangadi from "../../../public/evangadi.jpg";
+import teastation from "../../../public/tea-station.png";
 import { useRef } from "react";
 
 const items = [
@@ -31,6 +32,12 @@ const items = [
     id: 4,
     title: "Evangadi forum",
     img: evangadi,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  },
+  {
+    id: 4,
+    title: "Tea station",
+    img: teastation,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
 ];
@@ -63,6 +70,10 @@ const Single = ({ item }) => {
     case "Evangadi forum":
       demoLink = "https://safu-evangadi.netlify.app";
       sourceCodeLink = "https://github.com/safumulatu/evangadi-forum-client";
+      break;
+    case "Tea station":
+      demoLink = "https://safu-tea-station.netlify.app";
+      sourceCodeLink = "https://github.com/safumulatu";
       break;
     default:
       demoLink = "";
